@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <script src="https://kit.fontawesome.com/979416fa9f.js" crossorigin="anonymous"></script>
+        <title>Sarah's Portfolio</title>
+        <link rel="stylesheet" href="Style.css">
+
+    </head>
+    <body>
+       
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Sarah.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineering Student</p>
+                    <h1>Hi, I'm <span>Sarah</span> Daccache</h1>
+                </div>    
+
+            </div>
+           
+        </div>  
+
+        
+       
+        <div id="about">
+            <div class="container">
+                <div class="row"> 
+                    <div class="about-col-1">
+                       <img src="Images/about.PNG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class ="about-description">
+                            Hello there! I'm Sarah, a second year Software Engineering student at Concordia University. I am passionate about
+                            using thechnology and my creative problem-solving skills to develop innovative products that can make 
+                            people's lives!.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick = "opentab('experience')">Experience </p>
+                            <p class="tab-links" onclick = "opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java, Python, C++, C, JavaScript, SQL</li>
+                                <li><span>Full-Stack Web Development</span><br>HTML5, CSS, JavaScript, End-to-end Web Development, Integration of Front-end and Back-end</li>
+                                <li><span>Front-end Development</span><br>Responsive Design, User Interface Design</li>
+                                <li><span>Back-end Development</span><br>Database, API Development, SQL, Python, Java</li>
+                                <li><span>Software Design</span><br>UML, Object-Oriented Design Principles</li>
+                                <li><span>Data Analysis & Visualization</span><br>Power BI, Python (for data analysis), Dynamic Reporting</li>
+                                <li><span>Version Control</span><br>Proficient with Git and GitHub for Source Code Management</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Aug 2023 - Dec 2023</span><br>Software Engineer Intern at Bombardier</li>
+                            </ul>    
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Sep 2022 - May 2026</span><br>Bachelor of Engineering - BE, Software Engineering<br>Member of the Institute for 
+                                    Co-operative Education (Co-op)</li>  
+                            </ul>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------projects--------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/Car.jpg">
+                        <img src="Images/SuperRent.PNG">
+                        <div class="layer">
+                            <h3>SuperRent</h3>
+                            <p>Elite website offering the ultimate luxury car rental experience. Features seamless booking, exclusive supercar collections, and
+                                 personalized packages for unforgettable drives.</p> 
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>                       
+                        </div>
+                        
+                    </div>
+
+                    <div class="work">
+                        <img src="Images/SnakesLadders.jpg">
+                        <div class="layer">
+                            <h3>Snakes and Ladders Game</h3>
+                            <p>Revitalizes the classic board game with Java, featuring advanced logic and a dynamic console UI, offering a modern twist on traditional Snakes and Ladders. </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>                       
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="Images/FileOrganisation.jpg">
+                        <div class="layer">
+                            <h3>Interactive File Organization Program</h3>
+                            <p>Java-based solution for efficient book record management, utilizing data structures for optimal organization and an intuitive console interface.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>                       
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>    
+            </div>
+        </div>
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i>sarah.daccache@yahoo.ca</p>
+                        <p><i class="fa-solid fa-square-phone"></i>(514) 865-1403</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sarah-daccache-6a0008155/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/SarahDaccache">
+                                <i class="fa-brands fa-square-github"></i>
+                            </a>
+                        </div>
+                        <a href="Images/MyCV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Sarah Daccache. All rights reserved.</p>
+            </div>
+        </div>
+
+
+
+    
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+
+     </script>  
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpIArROZRKeMz8-A3X2YwiHoAyYPen1dxwe-MnXDKOct_TdOcu7b3N17C7QjN1keva/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        // Display the message immediately after the submit action
+        msg.innerHTML = "Thank you for reaching out! I will get back with you as soon as I see your message :)";
+        // Reset the form immediately after submission for immediate feedback
+        form.reset();
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                // Message will be kept for 5 seconds, then cleared
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                // Optionally, provide feedback for an error state
+            });
+    });
+</script>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.querySelector('.header-text h1');
+    // Break down the fullText into parts to isolate "Sarah" for special styling
+    const textBeforeSarah = "Hi, I'm ";
+    const sarahText = "Sarah"; // This part will be styled differently
+    const textAfterSarah = " Daccache";
+    const interval = 150; // Time in milliseconds between each character
+    let currentIndex = 0;
+    let fullCurrentText = '';
+
+    function typeWriter() {
+        // Determine the current length of the text before "Sarah", the length of "Sarah" itself, and the total length
+        const totalLengthBeforeSarah = textBeforeSarah.length;
+        const totalLengthSarah = sarahText.length;
+        const totalLength = textBeforeSarah.length + sarahText.length + textAfterSarah.length;
+
+        if (currentIndex < totalLength) {
+            // Update fullCurrentText based on the current index
+            if (currentIndex < totalLengthBeforeSarah) {
+                // Before "Sarah"
+                fullCurrentText = textBeforeSarah.substring(0, currentIndex + 1);
+            } else if (currentIndex < totalLengthBeforeSarah + totalLengthSarah) {
+                // "Sarah" part
+                fullCurrentText = textBeforeSarah + 
+                                  '<span style="color: #F1C1DD;">' + // Start of "Sarah" span with pink color
+                                  sarahText.substring(0, currentIndex - totalLengthBeforeSarah + 1) + 
+                                  '</span>';
+            } else {
+                // After "Sarah"
+                fullCurrentText = textBeforeSarah + 
+                                  '<span style="color: #F1C1DD;">' + sarahText + '</span>' + // Full "Sarah" span
+                                  textAfterSarah.substring(0, currentIndex - totalLengthBeforeSarah - totalLengthSarah + 1);
+            }
+
+            // Update the innerHTML of textElement to include the cursor
+            textElement.innerHTML = fullCurrentText + '<span class="cursor">|</span>';
+            currentIndex++;
+            setTimeout(typeWriter, interval);
+        } else {
+            // After the full text has been displayed, ensure the cursor is still blinking at the end
+            textElement.innerHTML = textBeforeSarah + 
+                                    '<span style="color: #F1C1DD;">' + sarahText + '</span>' + 
+                                    textAfterSarah + 
+                                    '<span class="cursor">|</span>';
+        }
+    }
+
+    typeWriter();
+});
+
+    </script>
+    
+    
+    
+
+
+    </body>
+</html>
